@@ -5,19 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
+    <link rel="stylesheet" href="task6.css">
+    <title>Task-pan-card</title>
   </head>
 
   <body>
-    <table>
+    <table align="center" >
       <thead>
         <tr>
           <th rowspan="3"></th>
@@ -25,7 +18,7 @@
             Request For New PAN card Or/AND Changes Or Correction in PAN Data.
             <br />
             Feild Mark with * (asterisk) are mandatory. To avoid mistake(s),
-            please refer guidelines and instructions.
+            please refer <u class="orange">guidelines</u> and <u class="orange">instructions.</u>
           </th>
           <!-- <th></th> -->
         </tr>
@@ -36,7 +29,7 @@
             <tr>
               <td></td>
               <td colspan="2">
-                * Whether citizen of India
+                <a class="star">*</a> Whether citizen of India
                 <label for="yes">Yes</label>
                 <input type="radio" name="gender" id="yes" required />
                 <label for="no">No</label>
@@ -47,7 +40,7 @@
             <tr>
               <td></td>
               <td colspan="2">
-                * Permanent Account Number(PAN)
+                <a class="star">*</a> Permanent Account Number(PAN)
                 <input type="text" class="" />
               </td>
               <!-- <td></td> -->
@@ -55,7 +48,7 @@
 
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
-              <td colspan="2">*1.Name</td>
+              <td colspan="2"><a class="star">*</a> 1.Name</td>
               <!-- <td></td> -->
             </tr>
             <tr>
@@ -87,11 +80,21 @@
             <tr>
               <td></td>
               <td colspan="2">
-                *Name as you would like to Printed on the Card. (Prefix like
+                <a class="star">*</a> Name as you would like to Printed on the Card. <a> (Prefix like
                 Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s , Alias etc.
-                are not allowed)
+                are not allowed)</a> 
               </td>
               <!-- <td></td> -->
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="2"><input type="text"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="2">Details of Parents <a>(Prefix like
+                Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s , Alias etc.
+                are not allowed)</a></td>
             </tr>
             <tr>
               <td></td>
@@ -110,8 +113,8 @@
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
               <td colspan="2">
-                *Father's Name(Mandatory Feild.Even married women should give
-                father's name only.)
+                <a class="star">*</a> Father's Name <a> (Mandatory Feild.Even married women should give
+                father's name only.)</a>
               </td>
             </tr>
 
@@ -128,7 +131,7 @@
             </tr>
             <tr>
               <td><input type="radio" name="" id="" /></td>
-              <td colspan="2"> *Mother's Name(This field is optional.)</td>
+              <td colspan="2"> <a><a class="star">*</a> Mother's Name(This field is optional.) </a></td>
             </tr>
             <tr>
               <td></td>
@@ -144,9 +147,9 @@
             <tr>
               <td></td>
               <td>
-                *Select Parent name which is to be printed on the card <br />
-                (In case no option is provided then PAN card will be issued with
-                the father's name)
+                <a class="star" >*</a> Select Parent name which is to be printed on the card <br />
+               <a> (In case no option is provided then PAN card will be issued with
+                the father's name)</a>
               </td>
               <td>
                 <label for="father">Father Name</label>
@@ -158,7 +161,7 @@
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
               <td>
-                *5. Date of Birth/incorporation/Agreement/Partnership or Trust
+                <a class="star">*</a> 5. Date of Birth/incorporation/Agreement/Partnership or Trust
                 Deep/ <br />
                 Formation of body of individuals/Assiocation of Persons
               </td>
@@ -169,7 +172,7 @@
             </tr>
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
-              <td>*6. Gender</td>
+              <td><a class="star">*</a> 6. Gender</td>
               <td>
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="male" />
@@ -189,7 +192,7 @@
             </tr>
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
-              <td>*9. Address of Communication</td>
+              <td><a class="star">*</a> 9. Address of Communication</td>
               <td>
                 <label for="resi">Residential</label>
                 <input type="radio" name="add" id="resi" />
@@ -268,7 +271,7 @@
             </tr>
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
-              <td>*11. Telephone No. <br />(Counrty code is compulsary)</td>
+              <td><a class="star">*</a> 11. Telephone No. <br />(Counrty code is compulsary)</td>
               <td>
                 Country code(ISO code)<br />
                 <select name="" id="">
@@ -307,19 +310,19 @@
               </td>
             </tr>
             <tr>
-              <td><input type="checkbox" name="" id="" /></td>
-              <td>*12 AADHAAR Number :</td>
+              <td><input type="checkbox" name="" id="" /></td>  
+              <td><a class="star">*</a> 12 AADHAAR Number :</td>
               <td>
                 <input type="text" /><br />
-                In case AADHAAR numder is provided, <br />
+                <a> In case AADHAAR numder is provided, <br />
                 then proof of AADHAAR along with supporting document Is To be
-                Submitted to NSDL
+                Submitted to NSDL</a>
               </td>
             </tr>
             <tr>
               <td></td>
               <td>
-                * Name as per AADHAAR letter or <br />
+                <a class="star">*</a> Name as per AADHAAR letter or <br />
                 as per the enrollment ID of Aadhaar Application form
               </td>
               <td>
