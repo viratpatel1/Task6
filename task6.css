@@ -1,0 +1,24 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+thead{
+  background-color: rgb(136, 24, 24);
+}
+thead > tr{
+  color: white;
+}
+tbody{
+background-color: rgb(247, 235, 213);
+}
+a{
+  color: blue;
+}
+.star{
+  color: red;
+}
+.orange{
+color: orange;
+}
